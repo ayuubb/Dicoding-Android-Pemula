@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            tools:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            tools:text="@string/hp_name" />
+
+        <TextView
+            android:id="@+id/tv_item_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_item_photo"
+            android:layout_toEndOf="@id/img_item_photo"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:maxLines="2"
+            tools:text="@string/detail" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

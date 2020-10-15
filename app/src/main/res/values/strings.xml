@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Handphone Trend</string>
+    <string name="hp_name">Nama Handphone</string>
+    <string name="detail">Detail</string>
+    <string name="chipset">Chipset</string>
+    <string name="memori">RAM dan Memori</string>
+    <string name="kamera">Kamera</string>
+    <string name="baterai">Baterai</string>
+</resources>

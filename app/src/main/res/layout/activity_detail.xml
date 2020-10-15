@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <ImageView
+        android:id="@+id/img_detail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/img_detail"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/hp_name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/chipset_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/chipset"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/chipset" />
+
+        <TextView
+            android:id="@+id/memori_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/memori"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/memori" />
+
+        <TextView
+            android:id="@+id/kamera_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:drawableStart="@drawable/camera"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/kamera" />
+
+        <TextView
+            android:id="@+id/batre_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/batre"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/baterai" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_detail"
+        android:text="Harga"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/harga_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/harga"
+        android:text="harga"
+        android:layout_marginBottom="20dp"
+        android:textSize="18sp"
+        android:layout_marginTop="3dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/harga_detail">
+
+        <TextView
+            android:id="@+id/isi_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:lineSpacingExtra="10sp"
+            android:scrollbars="vertical"
+            android:text="@string/detail"
+            android:textSize="18sp" />
+    </ScrollView>
+</RelativeLayout>
