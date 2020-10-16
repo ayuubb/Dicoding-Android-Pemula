@@ -1,4 +1,4 @@
-# Dicoding-android-pemula-ay-project-
+# Dicoding-android-pemula-ay-project
 Project pertama saya belajar di Dicoding, saya berharap bisa bermanfaat bagi teman-teman
 
 
